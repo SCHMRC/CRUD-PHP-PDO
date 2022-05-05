@@ -1,8 +1,4 @@
 <?php
-include __DIR__ . '/../shared/header.template.php';
-
-
-
 $result = $crud->getAllEsaminando();
 $msg_result = '';
 
