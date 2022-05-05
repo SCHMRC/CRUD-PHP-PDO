@@ -12,12 +12,12 @@ include __DIR__ . '/../connector/connector.php';
 
 $METHOD = $_SERVER['REQUEST_METHOD'];
 $URI = '/public/index.php';
-$crud = new Crud($pdo);
 
 switch($METHOD){
 
     case 'GET':{
         $request = $_SERVER['REQUEST_URI'];
+        echo $request ;
         if(isset($_GET['update'])){
             $cod_card = $_GET['update'];
             $res = $crud->getEsaminando($cod_card);
